@@ -1,0 +1,32 @@
+<div class="build-layout">
+  <div class="build-upper">
+
+    <div class="build-upper-tabs">
+      <button class="btn btn-primary" [routerLink]="'layouts'" (click)="show = true"> Show Layouts</button>
+    </div>
+    <div class="build-upper-right">
+      <div class="skills">
+        <div class="add-skill">
+          <h4>Add skills</h4>
+          <input class="form-control" type="text" [(ngModel)]="skillInput" />
+          <button class="btn" (click)="addSkill(skillInput)">Add</button>
+        </div>
+
+        <div class="all-skills">
+          <div class="skill" *ngFor="let skill of skills">
+            <span class="skill-name">
+              {{ skill }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="build-right">
+    <div *ngIf="show">
+      <button class="btn btn-warning" (click)="show = false">Close Preview</button>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

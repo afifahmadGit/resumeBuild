@@ -1,0 +1,51 @@
+.skills{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    background-color:  aliceblue;
+    min-height: 0;
+    border-radius: 8px;
+    .add-skill{
+        padding: 10px 20px;
+
+    }
+    .all-skills{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 8px;
+        padding: 5px;
+    }
+    .skill{
+        padding: 0px 10px;
+        margin: 5px;
+        border-radius: 3px;
+        background-color:  rgb(188, 224, 255);
+    }
+
+}
+.build-layout{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    
+    .build-upper{
+        // flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        .build-upper-tabs{
+            flex: 0.2;
+
+        }
+        .build-upper-right{
+            flex: 0.75;
+            // background-color:    
+        }
+    }
+    
+}
+

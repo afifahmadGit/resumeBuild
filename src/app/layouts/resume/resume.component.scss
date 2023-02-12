@@ -1,0 +1,277 @@
+:host{
+    --primary : #1a735f;
+    --dark : #151A33;
+    --secondary : #2b55cc;
+    --info : #4d79f6;
+    --ternary : #848db3;
+    --pure:#eff2f9;
+    --fade : #7081b9;
+    --mild : #8997bd;
+    --footer: #212A4A;
+    --black : #060b1b;
+    --dribble : #ff5da0;
+    --success : #1ecab8;
+    --danger : #f1646c;
+    --dark-blue : #28365f;
+}
+
+*{
+    margin: 0;
+    padding : 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+.resume-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    min-height: 100vh;
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    margin: 50px;
+    box-shadow: 0 50px 75px rgba(0,0,0,0.1) ;
+    .top{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 40px;
+        padding-bottom: 0;
+        .imgBx{
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            .box{
+                position: relative;
+
+            }
+
+        }
+        .profileText{
+            position: relative;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            h3{
+                font-size: 2.5em;
+                letter-spacing: 0.1em;
+                line-height: 1.0em;
+                font-weight: 600;
+                color: #333;
+                span{
+                    position: relative;
+                    font-size: 0.5em;
+                    font-weight: 300;
+                    top: -10px;
+                    
+                }
+
+            }
+        }
+
+    }
+    .contentBox{
+        position: relative;
+        min-height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 0 40px 40px;
+        h3{
+            border-left: 4px solid #ff8bb3;
+            padding-left: 10px;
+            line-height: 1em;
+            font-weight: 600;
+            color: #333;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+            margin-top: 50px;
+ 
+        }
+        ul{
+            position: relative;
+            margin: 10px 0;
+            li{
+                list-style: none;
+                margin: 25px 0;
+                line-height: 0.5em;
+                color: #333;
+                
+            }
+        }
+        ul.education li{
+            flex-direction: column;
+            margin: 25px 0;
+
+        }
+        ul.education h5{
+            color: #3590d2;
+        }
+        ul.education h4{
+            color: #333;
+            font-weight: 500;
+            margin: 5px 0;
+        }
+        ul.education h6{
+            color: #666;
+            font-weight: 300;
+            margin: 5px 0;
+            font-size: 1em;
+        }
+        ul.langauge li{
+            flex-direction: column;
+            span{
+                color: #333;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            .percent{
+                position:relative;
+                width: 100%;
+                background-color: #e3e3e3;
+                height: 6px;
+                margin-top: 10px;
+                margin-bottom: 7px;
+                display: block;
+                overflow: hidden;
+                .div{
+                    position: absolute ;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    background-color: #3590d2;
+  
+                }
+            }
+        }
+        ul.extras{
+            position: relative;
+            display: grid;
+            grid-template-columns:  1fr 1fr;
+            li{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin: 20px
+            }
+        }
+
+
+
+    }
+    .rightSide{
+        padding: 40px;
+        padding-left: 40px;
+        p{
+            font-style: 300;
+        }
+        .about .box{
+            display: flex;
+            margin: 20px 0;
+            .year{
+                margin-right: 5px;
+                min-width: 150px;
+                margin-bottom: 10px;
+                h5{
+                    color: #333;
+                    font-weight: 600;
+                }
+                h5:nth-child(1){
+                        color: #3590d2;
+
+                }
+
+            }
+            .text{
+                h4{
+                    color: #3590d2;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.skill-list{
+    display: flex;
+    flex-wrap: wrap;
+    li{
+        div{
+
+            margin-right: 10px;
+        }
+    }
+}
+}
+
+.resume-2{
+    h1,h2,h3,h4,h5,h6{
+        margin: 0;
+        line-height: 1;
+    }
+    .container{
+        max-width: 1140px;
+        margin: 0 auto;
+        color: white;
+        .profile{
+            display: flex;
+            background-color: var(--black);
+            align-items: center;
+            padding: 3rem;
+            margin-top: 60px;
+            .left{
+                flex:2;
+                display: flex;
+                align-items: center;
+                h2{
+                    color: var(--fade);
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }
+                p{
+                    color: var(--mild);
+                    font-size: 14px;
+                }
+
+                .avtar{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    background-color: red;
+                    // overflow: hidden;
+                    margin-right: 20px;
+                    .comment{
+                        position: absolute;
+                        bottom: 0;
+                        color: white;
+                    }
+                }
+            }
+            .right{
+                flex: 1;
+                ul{
+                    list-style-type: none;
+                    margin-bottom: 1.6rem;
+                    li{
+                        color: var(--ternary);
+                        margin-bottom: 0.7rem;
+                        font-size: 14px;
+                    }
+                }
+                
+
+            }
+        }
+
+    }
+
+}
+
+.resume-3{
+    
+}
