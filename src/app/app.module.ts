@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule} from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatIconModule} from '@angular/material/icon';
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +14,11 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatButtonModule} from '@angular/material/button';
+import {MatListModule} from '@angular/material/list';
+import { HttpClientModule } from '@angular/common/http';
+import {MatTableModule} from '@angular/material/table';
+
+
 
 
 
@@ -27,6 +33,8 @@ import {MatButtonModule} from '@angular/material/button';
   ],
   imports: [
     FormsModule,ReactiveFormsModule,MatSidenavModule,MatButtonModule,
+    MatTableModule,
+    BrowserAnimationsModule,MatListModule,HttpClientModule,
     MatIconModule,
     DragDropModule,
     BrowserModule,

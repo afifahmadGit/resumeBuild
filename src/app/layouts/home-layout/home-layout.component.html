@@ -1,0 +1,26 @@
+<div class="main">
+    <div class="info">
+        <h1>User Details</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nam accusamus excepturi est ipsam, a aliquid neque ducimus, ex dolores ullam minima in? Numquam explicabo temporibus laborum amet minima quod recusandae provident, perspiciatis quasi repellendus quibusdam, aspernatur distinctio
+             inventore pariatur repellat consectetur sit illo quae, assumenda nobis delectus labore? Odio?</p>
+    </div>
+    <div class="userData">
+        <table class="table table-hover">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">Name</th>
+                    <th scope="col">Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of usersObj | keyvalue" 
+                    [ngClass]="{'red':user.value > 0 && user.value < 3,
+                                'yellow':user.value > 2 && user.value < 10,'green':user.value >=10}">
+                    <td scope="row" >{{user.key}}</td>
+                    <td scope="row">{{user.value}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
